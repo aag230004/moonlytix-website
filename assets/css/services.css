@@ -80,6 +80,23 @@
   max-width: 48ch;
 }
 
+.platform-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-5);
+}
+
+.platform-tag {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.04em;
+  color: var(--ember-red);
+  background: var(--ember-gradient-soft);
+  border-radius: var(--radius-full);
+  padding: 0.35rem 0.85rem;
+}
+
 .includes-list {
   display: flex;
   flex-direction: column;
