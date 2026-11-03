@@ -252,6 +252,47 @@
   }
 }
 
+/* ---------- Phone: hide the hero video entirely, and tighten the
+   approach section so each step reads as one compact unit instead of
+   a full-width illustration followed by a wall of text. ---------- */
+@media (max-width: 640px) {
+  .hero-visual {
+    display: none;
+  }
+
+  .approach-visual {
+    margin-top: var(--sp-5);
+    gap: var(--sp-4);
+  }
+
+  .approach-zone {
+    max-width: 190px;
+    margin-inline: auto;
+    padding: var(--sp-3);
+  }
+
+  .approach-hub {
+    max-width: 160px;
+  }
+
+  .approach-item__title {
+    margin-top: var(--sp-4);
+    font-size: 1rem;
+  }
+
+  .approach-item__desc {
+    font-size: 0.875rem;
+  }
+
+  .approach-arrow {
+    height: 28px;
+  }
+
+  .approach-arrow svg {
+    width: 28px;
+  }
+}
+
 /* ---------- Services grid ---------- */
 .services-grid {
   margin-top: var(--sp-7);

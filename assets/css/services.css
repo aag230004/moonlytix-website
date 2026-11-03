@@ -140,7 +140,9 @@
     grid-template-columns: 1fr;
     direction: ltr;
   }
-  .service-detail__visual {
-    order: -1;
-  }
+}
+
+.services-nav a.is-active {
+  color: var(--ember-red);
+  border-color: var(--ember-red);
 }

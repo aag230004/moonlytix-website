@@ -4,13 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About — Moonlytix</title>
-<meta name="description" content="Moonlytix is a supply chain and operations analytics consultancy for growing and mid-sized companies. Learn how we work and what guides the approach." />
+<meta name="description" content="Moonlytix is a data and analytics consulting firm based in Dallas-Fort Worth, helping growing and mid-sized companies turn operational data into confident decisions." />
 <link rel="icon" type="image/png" href="assets/images/logo-mark.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/main.css?v=14" />
-<link rel="stylesheet" href="assets/css/about.css" />
+<link rel="stylesheet" href="assets/css/main.css?v=17" />
+<link rel="stylesheet" href="assets/css/about.css?v=6" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -40,96 +40,148 @@
 
 <main id="main">
 
+  <!-- 1. INTRO -->
   <section class="about-hero section--dark">
     <div class="container">
       <p class="eyebrow">About Moonlytix</p>
-      <h1 data-reveal>We exist because most operations teams aren&rsquo;t short on data — they&rsquo;re short on clarity.</h1>
-      <p class="lead" data-reveal>Moonlytix is a supply chain and operations analytics consultancy for growing and mid-sized companies. We take the data you already collect and turn it into forecasts, dashboards, and decisions your team can run the business on.</p>
+      <h1 data-reveal>Your trusted analytics partner.</h1>
+      <p class="lead" data-reveal>Moonlytix is a data and analytics consulting firm based in Dallas-Fort Worth. We work alongside operations and leadership teams at growing and mid-sized companies, starting with supply chain, where better data has a direct impact on cost, inventory, and service.</p>
+    </div>
+    <div class="about-hero__graphic" aria-hidden="true">
+      <svg viewBox="0 0 400 400" fill="none">
+        <circle cx="200" cy="200" r="160" stroke="rgba(255,255,255,0.08)"/>
+        <circle cx="200" cy="200" r="110" stroke="rgba(255,145,77,0.16)"/>
+        <circle class="pulse-ring" cx="200" cy="200" r="60" stroke="#ff914d" stroke-width="1.2"/>
+        <circle cx="200" cy="200" r="64" fill="#10123a" stroke="url(#aboutGrad)" stroke-width="1.6"/>
+        <g fill="rgba(255,255,255,0.35)">
+          <circle cx="200" cy="90" r="2.2"/>
+          <circle cx="300" cy="150" r="2.2"/>
+          <circle cx="305" cy="260" r="2.2"/>
+          <circle cx="210" cy="320" r="2.2"/>
+          <circle cx="100" cy="270" r="2.2"/>
+          <circle cx="95" cy="145" r="2.2"/>
+        </g>
+        <g stroke="rgba(255,255,255,0.14)" stroke-width="1">
+          <line x1="200" y1="200" x2="200" y2="90"/>
+          <line x1="200" y1="200" x2="300" y2="150"/>
+          <line x1="200" y1="200" x2="305" y2="260"/>
+          <line x1="200" y1="200" x2="210" y2="320"/>
+          <line x1="200" y1="200" x2="100" y2="270"/>
+          <line x1="200" y1="200" x2="95" y2="145"/>
+        </g>
+        <defs>
+          <linearGradient id="aboutGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff3131"/>
+            <stop offset="1" stop-color="#ff914d"/>
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
   </section>
 
+  <!-- 2. OUR STORY -->
   <section class="section">
     <div class="container mission">
-      <p class="eyebrow">Why we do this</p>
-      <h2>Spreadsheets get you far. They don&rsquo;t get you confident.</h2>
-      <p data-reveal>Most operations teams we meet aren&rsquo;t lacking effort or intelligence — they&rsquo;re lacking a system. Decisions get made from whichever spreadsheet was updated most recently, forecasts get built from memory, and by the time a report is ready, the moment it was meant to inform has already passed.</p>
+      <p class="eyebrow">Our story</p>
+      <h2>Built by people who lived the problem.</h2>
+      <p data-reveal>Our founders spent years inside daily operations, surrounded by manual work and scattered data, where decisions were still made on intuition instead of information. Reports took days to pull together, metrics meant something different depending on who you asked, and leaders still struggled to answer basic questions about efficiency, profitability, and growth.</p>
       <br />
-      <p data-reveal>We build the analytics layer that closes that gap: grounded in how your operation actually runs, not a generic dashboard template. The goal isn&rsquo;t a one-time report — it&rsquo;s a way of seeing your business that your team keeps after we&rsquo;re gone.</p>
+      <p data-reveal>Moonlytix was created to close that gap: to bring our knowledge of data and analytics into daily operations and help businesses make decisions they can actually trust, without the cost of a large consulting firm, and with everything built so your team fully owns it.</p>
+      <br />
+      <p data-reveal>We are starting with supply chain and operations analytics, where our expertise runs deepest today. As we grow, we plan to bring the same approach to CX analytics, marketing, and finance.</p>
     </div>
   </section>
 
+  <!-- 3. MISSION & VISION -->
   <section class="section section--dark">
     <div class="container">
-      <p class="eyebrow">How we work</p>
-      <h2 style="max-width:26ch">A structured path, not a black box.</h2>
-
-      <div class="timeline">
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-item__num">01</div>
-          <div>
-            <h3>Discover</h3>
-            <p>We start by mapping what you actually have — systems, spreadsheets, data quality, and the gaps between them. No model gets built until we understand how information really moves through your operation.</p>
-          </div>
+      <div class="mv-grid">
+        <div class="card mv-card" data-reveal>
+          <p class="eyebrow">Our mission</p>
+          <p class="mv-card__body">To illuminate the decisions that matter. We take the manual work and scattered data out of daily operations and turn them into insight your team can act on with confidence, starting with supply chain and operations.</p>
         </div>
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-item__num">02</div>
-          <div>
-            <h3>Model</h3>
-            <p>We build forecasting, inventory, supplier, and cost models tuned to your product mix, seasonality, and constraints — not an off-the-shelf template that ignores how your business is different.</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-item__num">03</div>
-          <div>
-            <h3>Decide</h3>
-            <p>Models become dashboards and decision frameworks written in plain language, so your leadership team can act on them immediately — without needing us in the room to interpret the numbers.</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-item__num">04</div>
-          <div>
-            <h3>Operationalize</h3>
-            <p>We embed the tooling into your team&rsquo;s actual workflow and train the people who&rsquo;ll own it, so the system keeps working — and keeps improving — long after the engagement ends.</p>
-          </div>
+        <div class="card mv-card" data-reveal>
+          <p class="eyebrow">Our vision</p>
+          <p class="mv-card__body">To become the analytics partner growing companies turn to first, helping leaders move from intuition to data-driven decisions across operations, CX, marketing, and finance.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- 4. WHAT WE STAND FOR -->
   <section class="section">
     <div class="container">
       <p class="eyebrow">What guides the work</p>
-      <h2 style="max-width:28ch">Four things we don&rsquo;t compromise on.</h2>
+      <h2 style="max-width:20ch">What we stand for</h2>
+      <p class="lead" style="margin-top:0.75rem">Clear data. Practical insight. Confident decisions.</p>
 
-      <div class="principles-grid">
-        <div class="card principle-card" data-reveal>
-          <span class="principle-card__index">PRINCIPLE</span>
-          <h3>Operations-first, not dashboards-first</h3>
-          <p>We start with how decisions actually get made on your floor and in your planning meetings — not with a tool we&rsquo;re trying to sell you.</p>
+      <div class="pillars-grid">
+        <div class="card pillar-card" data-reveal>
+          <div class="pillar-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12Z" stroke-linejoin="round"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Clarity</h3>
+          <p>We turn scattered systems and spreadsheets into one place you can trust, so decisions stop depending on who remembers what.</p>
         </div>
-        <div class="card principle-card" data-reveal>
-          <span class="principle-card__index">PRINCIPLE</span>
-          <h3>Right-sized for mid-market</h3>
-          <p>You get senior-level analytics thinking without the enterprise price tag, timeline, or headcount required to run it.</p>
+        <div class="card pillar-card" data-reveal>
+          <div class="pillar-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7h5v5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Prediction</h3>
+          <p>We replace gut feel with models built on your own data, so you can plan ahead instead of reacting to what already happened.</p>
         </div>
-        <div class="card principle-card" data-reveal>
-          <span class="principle-card__index">PRINCIPLE</span>
-          <h3>We stay until it&rsquo;s operational</h3>
-          <p>An analysis that lives in a slide deck doesn&rsquo;t count. An engagement isn&rsquo;t finished until your team can run it themselves.</p>
+        <div class="card pillar-card" data-reveal>
+          <div class="pillar-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Action</h3>
+          <p>Every dashboard comes with a recommendation attached, not just a number for your team to interpret on its own.</p>
         </div>
-        <div class="card principle-card" data-reveal>
-          <span class="principle-card__index">PRINCIPLE</span>
-          <h3>Plain-English reporting</h3>
-          <p>Every dashboard and model has to be explainable to the person making the decision — not just the person who built it.</p>
+        <div class="card pillar-card" data-reveal>
+          <div class="pillar-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3Z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Ownership</h3>
+          <p>We build the system your team runs after we&rsquo;re gone, not a report that sits unopened after the first month.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- 6. MEET THE TEAM -->
+  <section class="section section--dark">
+    <div class="container">
+      <p class="eyebrow">The founders</p>
+      <h2 style="max-width:20ch">Meet the founders</h2>
+
+      <div class="team-grid">
+        <div class="card team-card" data-reveal>
+          <img class="team-card__avatar" src="assets/images/team/andres-gonzalez.jpg" alt="Andres Gonzalez, Founder &amp; CEO of Moonlytix" width="84" height="84" loading="lazy" />
+          <h3>Andres Gonzalez</h3>
+          <p class="team-card__title">Founder &amp; Chief Executive Officer</p>
+          <a class="team-card__linkedin" href="https://www.linkedin.com/in/andres-gonzalez-093b44185/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="Andres Gonzalez on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.6v1.64h.05c.5-.95 1.73-1.95 3.56-1.95 3.8 0 4.5 2.5 4.5 5.77V21h-4v-5.32c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.81V21h-4V9Z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="card team-card" data-reveal>
+          <img class="team-card__avatar" src="assets/images/team/cecilia-salazar-torres.jpg" alt="Cecilia Salazar Torres, Co-Founder &amp; CMO of Moonlytix" width="84" height="84" loading="lazy" />
+          <h3>Cecilia Salazar Torres</h3>
+          <p class="team-card__title">Co-Founder &amp; Chief Marketing Officer</p>
+          <a class="team-card__linkedin" href="https://www.linkedin.com/in/cecilia-salazar/" target="_blank" rel="noopener noreferrer" aria-label="Cecilia Salazar Torres on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.6v1.64h.05c.5-.95 1.73-1.95 3.56-1.95 3.8 0 4.5 2.5 4.5 5.77V21h-4v-5.32c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.81V21h-4V9Z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CLOSING CTA -->
   <section class="section cta-band">
     <div class="container text-center">
-      <h2>Let&rsquo;s see what your data is telling you.</h2>
-      <p>Start with a short operations data assessment — no commitment, just a clear picture of where the opportunity is.</p>
+      <h2>Schedule a call with our team.</h2>
+      <p>We&rsquo;ll learn how your operation runs, review where your data lives, and show you where the biggest opportunities are. No commitment.</p>
       <div class="btn-group">
         <a href="contact.html" class="btn btn-primary">
           Book an assessment

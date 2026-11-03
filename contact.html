@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/main.css?v=14" />
-<link rel="stylesheet" href="assets/css/contact.css" />
+<link rel="stylesheet" href="assets/css/main.css?v=17" />
+<link rel="stylesheet" href="assets/css/contact.css?v=2" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -44,42 +44,13 @@
     <div class="container container--narrow">
       <p class="eyebrow" style="justify-content:center">Get in touch</p>
       <h1 data-reveal>Let&rsquo;s talk about your data.</h1>
-      <p class="lead text-center" data-reveal>Tell us a bit about your operation and where things feel unclear. We&rsquo;ll follow up with next steps — usually within one business day.</p>
+      <p class="lead text-center" data-reveal>Whether you have a specific project in mind or just a question, we&rsquo;d love to hear about your business.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="contact-layout">
-
-        <div class="contact-info" data-reveal>
-          <p class="eyebrow">Reach us directly</p>
-          <h2>Prefer email or a call?</h2>
-          <p class="lead">Either works. Send us a note or book time directly, and we&rsquo;ll come prepared with questions specific to your operation.</p>
-
-          <div class="contact-info-card">
-            <h4>Email</h4>
-            <a href="mailto:hello@moonlytix.com">hello@moonlytix.com</a>
-          </div>
-
-          <div class="contact-info-card">
-            <h4>What happens next</h4>
-            <ul class="expect-list">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                We reply within one business day to schedule a short call.
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                We ask about your systems, data, and current pain points.
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                You get a clear scope and starting point — no obligation.
-              </li>
-            </ul>
-          </div>
-        </div>
 
         <div class="contact-form-card" data-reveal>
           <form class="contact-form" id="contact-form" novalidate>
@@ -103,22 +74,52 @@
                 <span class="error-msg">Please enter your company name.</span>
               </div>
               <div class="field">
-                <label for="interest">Area of interest</label>
-                <select id="interest" name="interest">
-                  <option value="">Not sure yet</option>
-                  <option value="visibility">Supply Chain Visibility</option>
-                  <option value="forecasting">Demand Forecasting</option>
-                  <option value="inventory">Inventory Optimization</option>
-                  <option value="suppliers">Supplier Performance</option>
-                  <option value="transportation">Transportation &amp; Logistics Cost</option>
-                  <option value="strategy">Data Strategy &amp; Decision Systems</option>
+                <label for="phone">Phone number <span class="optional-mark">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="industry">Type of business</label>
+                <select id="industry" name="industry">
+                  <option value="" selected>Not sure yet</option>
+                  <option value="manufacturing">Manufacturing</option>
+                  <option value="retail">Retail &amp; E-commerce</option>
+                  <option value="distribution">Distribution &amp; Logistics</option>
+                  <option value="wholesale">Wholesale</option>
+                  <option value="food-beverage">Food &amp; Beverage</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="analytics-level">Analytics experience</label>
+                <select id="analytics-level" name="analytics-level">
+                  <option value="" selected>Not sure yet</option>
+                  <option value="none">No analytics yet</option>
+                  <option value="spreadsheets">Mostly spreadsheets</option>
+                  <option value="some-bi">Some BI tools in place</option>
+                  <option value="mature">Mature analytics team</option>
                 </select>
               </div>
             </div>
 
             <div class="field">
+              <label for="interest">Area of interest</label>
+              <select id="interest" name="interest">
+                <option value="" selected>Not sure yet</option>
+                <option value="visibility">Supply Chain Visibility</option>
+                <option value="forecasting">Demand Forecasting</option>
+                <option value="inventory">Inventory Optimization</option>
+                <option value="suppliers">Supplier Performance</option>
+                <option value="transportation">Transportation &amp; Logistics Cost</option>
+                <option value="strategy">Data Strategy &amp; Decision Systems</option>
+              </select>
+            </div>
+
+            <div class="field">
               <label for="message">What&rsquo;s going on? <span class="required-mark">*</span></label>
-              <textarea id="message" name="message" required placeholder="A sentence or two on what's prompting this — a forecasting headache, rising freight costs, a system migration, anything."></textarea>
+              <textarea id="message" name="message" required placeholder="A sentence or two on what's prompting this, such as a forecasting headache, rising freight costs, or a system migration."></textarea>
               <span class="error-msg">Tell us a little about what you need.</span>
             </div>
 
@@ -127,7 +128,7 @@
                 Send message
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </button>
-              <span class="form-note">We&rsquo;ll never share your information.</span>
+              <span class="form-note">We only use your information to reply to you.</span>
             </div>
           </form>
 
@@ -136,7 +137,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <h3>Message sent.</h3>
-            <p>Thanks for reaching out — we&rsquo;ll be in touch within one business day at the email you provided.</p>
+            <p>Thanks for reaching out, we&rsquo;ll be in touch within one business day at the email you provided.</p>
           </div>
         </div>
 
