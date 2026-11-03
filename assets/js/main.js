@@ -37,7 +37,12 @@
           }
         });
       },
-      { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }
+      /* threshold:0 so a reveal fires as soon as any part of the element
+         enters the trigger zone — with threshold:0.15, a block taller than
+         ~85% of the viewport (very common on mobile, e.g. a service detail
+         section) could sit fully in view but still invisible (opacity:0)
+         because the required 15%-visible area was never reached. */
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' }
     );
     revealEls.forEach((el, i) => {
       el.style.setProperty('--i', i % 8);

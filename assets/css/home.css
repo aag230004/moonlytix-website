@@ -260,6 +260,18 @@
     display: none;
   }
 
+  /* With the video gone, the hero's own bottom padding plus the
+     actions block's bottom margin used to stack into ~128px of plain
+     dark space before the next section — reads as a broken/empty area
+     rather than intentional breathing room. Tighten both. */
+  .hero {
+    padding-bottom: var(--sp-5);
+  }
+
+  .hero-actions {
+    margin-bottom: var(--sp-5);
+  }
+
   .approach-visual {
     margin-top: var(--sp-5);
     gap: var(--sp-4);
