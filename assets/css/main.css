@@ -419,8 +419,7 @@ h4 {
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--sp-4);
+  gap: var(--sp-7);
 }
 
 .brand {
@@ -492,6 +491,7 @@ h4 {
   display: flex;
   align-items: center;
   gap: var(--sp-3);
+  margin-left: auto;
 }
 
 .nav-actions .btn-primary {
@@ -572,6 +572,7 @@ h4 {
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  max-width: 960px;
   gap: var(--sp-6);
   padding-bottom: var(--sp-7);
   border-bottom: 1px solid var(--line-dark);
