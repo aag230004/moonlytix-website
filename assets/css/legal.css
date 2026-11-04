@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Legal pages (Privacy Policy, etc.)
+   ========================================================================== */
+
+.legal-hero {
+  padding-top: calc(var(--nav-h) + var(--sp-8));
+  padding-bottom: var(--sp-7);
+  background: radial-gradient(ellipse 70% 50% at 50% 10%, rgba(255, 66, 61, 0.1), transparent 60%), var(--void);
+  text-align: center;
+}
+
+.legal-hero h1 {
+  color: var(--white);
+  margin-bottom: var(--sp-4);
+}
+
+.legal-hero .lead {
+  margin-inline: auto;
+  color: var(--text-on-dark-soft);
+}
+
+.legal-content {
+  max-width: 720px;
+}
+
+.legal-content > .lead {
+  color: var(--ink-soft);
+  font-size: var(--fs-lead);
+  line-height: 1.65;
+  margin-bottom: var(--sp-6);
+}
+
+.legal-content h2 {
+  font-size: var(--fs-h3);
+  margin-top: var(--sp-7);
+  margin-bottom: var(--sp-4);
+}
+
+.legal-content h2:first-of-type {
+  margin-top: 0;
+}
+
+.legal-content p {
+  color: var(--ink-soft);
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  margin-bottom: var(--sp-4);
+}
+
+.legal-content a {
+  color: var(--ember-red);
+  text-decoration: underline;
+}
+
+.legal-list {
+  margin-bottom: var(--sp-4);
+  padding-left: var(--sp-5);
+  color: var(--ink-soft);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+  list-style: disc;
+}
