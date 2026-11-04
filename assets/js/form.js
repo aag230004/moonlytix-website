@@ -1,10 +1,8 @@
 /**
- * Contact form — client-side validation + success state only.
- *
- * No backend is wired up yet. To actually receive submissions, point the
- * <form> at a form backend (e.g. Formspree, Resend, Basin) by setting its
- * action/method attributes, remove the preventDefault() below, and let the
- * browser submit natively — or fetch() the action URL from this handler.
+ * Contact form — client-side validation, then a real submission to
+ * Web3Forms (https://web3forms.com), which emails the submission
+ * straight to the inbox tied to the access_key in contact.html.
+ * No server of our own involved.
  */
 (function () {
   const form = document.getElementById('contact-form');
@@ -12,6 +10,9 @@
 
   const card = form.closest('.contact-form-card');
   const successPanel = document.getElementById('form-success');
+  const errorPanel = document.getElementById('form-error');
+  const submitBtn = form.querySelector('.form-submit button[type="submit"]');
+  const submitBtnDefaultHTML = submitBtn ? submitBtn.innerHTML : '';
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   function fieldWrap(el) {
@@ -43,8 +44,30 @@
     });
   });
 
+  function setSending(isSending) {
+    if (!submitBtn) return;
+    submitBtn.disabled = isSending;
+    submitBtn.innerHTML = isSending ? 'Sending&hellip;' : submitBtnDefaultHTML;
+  }
+
+  function showSuccess() {
+    if (card) card.classList.add('is-submitted');
+    if (successPanel) {
+      successPanel.classList.add('is-visible');
+      successPanel.setAttribute('tabindex', '-1');
+      successPanel.focus();
+    }
+    form.reset();
+  }
+
+  function showError() {
+    if (errorPanel) errorPanel.classList.add('is-visible');
+  }
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    if (errorPanel) errorPanel.classList.remove('is-visible');
 
     let firstInvalid = null;
     fields.forEach((el) => {
@@ -57,13 +80,25 @@
       return;
     }
 
-    /* Wire a real backend here. For now, show a success state. */
-    if (card) card.classList.add('is-submitted');
-    if (successPanel) {
-      successPanel.classList.add('is-visible');
-      successPanel.setAttribute('tabindex', '-1');
-      successPanel.focus();
-    }
-    form.reset();
+    setSending(true);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new FormData(form),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setSending(false);
+        if (data.success) {
+          showSuccess();
+        } else {
+          showError();
+        }
+      })
+      .catch(() => {
+        setSending(false);
+        showError();
+      });
   });
 })();

@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/main.css?v=17" />
-<link rel="stylesheet" href="assets/css/contact.css?v=2" />
+<link rel="stylesheet" href="assets/css/contact.css?v=3" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -54,6 +54,11 @@
 
         <div class="contact-form-card" data-reveal>
           <form class="contact-form" id="contact-form" novalidate>
+            <input type="hidden" name="access_key" value="925a8ac5-29b5-4b54-96e1-9617ac1d5915" />
+            <input type="hidden" name="subject" value="New inquiry from the Moonlytix website" />
+            <input type="hidden" name="from_name" value="Moonlytix Website" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
+
             <div class="form-row">
               <div class="field">
                 <label for="name">Full name <span class="required-mark">*</span></label>
@@ -130,6 +135,7 @@
               </button>
               <span class="form-note">We only use your information to reply to you.</span>
             </div>
+            <p class="form-error" id="form-error" role="alert">Something went wrong sending your message. Please email us directly at <a href="mailto:hello@moonlytix.com">hello@moonlytix.com</a>.</p>
           </form>
 
           <div class="form-success" id="form-success" role="status" aria-live="polite">
@@ -192,6 +198,6 @@
 </footer>
 
 <script src="assets/js/main.js?v=2"></script>
-<script src="assets/js/form.js"></script>
+<script src="assets/js/form.js?v=2"></script>
 </body>
 </html>

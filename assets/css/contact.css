@@ -52,6 +52,21 @@
   color: var(--mist);
 }
 
+.form-error {
+  display: none;
+  margin-top: var(--sp-4);
+  font-size: var(--fs-small);
+  color: var(--ember-red);
+}
+
+.form-error.is-visible {
+  display: block;
+}
+
+.form-error a {
+  text-decoration: underline;
+}
+
 .form-success {
   display: none;
   text-align: center;
