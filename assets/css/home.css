@@ -9,7 +9,6 @@
    .hero::before extends a matching, much sparser starfield across the
    whole section (both columns) so there's no seam for the eye to catch. */
 .hero {
-  min-height: 100dvh;
   display: flex;
   align-items: center;
   padding-top: calc(var(--nav-h) + var(--sp-6));
@@ -131,7 +130,6 @@
   }
   .hero {
     padding-top: calc(var(--nav-h) + var(--sp-5));
-    min-height: auto;
   }
 }
 
