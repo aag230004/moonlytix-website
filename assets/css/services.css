@@ -12,7 +12,10 @@
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: var(--sp-7);
-  align-items: center;
+  /* align-items:start (not center) — the graphic column is taller than
+     the text most of the time, and centering the text against it just
+     reopens the same gap-above-the-heading bug the home hero had. */
+  align-items: start;
 }
 
 .services-hero h1 {

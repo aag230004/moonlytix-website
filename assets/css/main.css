@@ -26,6 +26,11 @@
   --white: #ffffff;
   --ember-red: #ff3131;
   --ember-orange: #ff914d;
+  /* A deeper, more saturated orange for small text (the eyebrow
+     labels) — --ember-orange reads fine as a button/border accent but
+     is too light-value to be legible as small text on a light
+     background. */
+  --ember-orange-deep: #c2410c;
   --ember-gradient: linear-gradient(120deg, #ff3131 0%, #ff914d 100%);
   --ember-gradient-soft: linear-gradient(120deg, rgba(255, 49, 49, 0.14) 0%, rgba(255, 145, 77, 0.14) 100%);
   --text-on-dark: rgba(255, 255, 255, 0.92);
@@ -228,7 +233,7 @@ h4 {
   font-size: var(--fs-micro);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ember-orange);
+  color: var(--ember-orange-deep);
   font-weight: 600;
   margin-bottom: var(--sp-3);
 }
