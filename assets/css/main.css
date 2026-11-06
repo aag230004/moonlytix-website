@@ -203,7 +203,10 @@ h4 {
 }
 
 .section--dark {
-  background: var(--void);
+  /* One glow, defined once, so every dark section site-wide (hero or
+     not) looks the same instead of each page carrying its own
+     slightly-different position/size/color copy of it. */
+  background: radial-gradient(ellipse 70% 50% at 20% 20%, rgba(255, 66, 61, 0.09), transparent 60%), var(--void);
   color: var(--text-on-dark);
 }
 

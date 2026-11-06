@@ -15,7 +15,6 @@
   padding-bottom: var(--sp-7);
   position: relative;
   overflow: hidden;
-  background: radial-gradient(ellipse 80% 60% at 75% 30%, rgba(255, 66, 61, 0.1), transparent 60%), var(--void);
 }
 
 .hero::before {
