@@ -42,13 +42,37 @@
 .form-submit {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--sp-4);
   margin-top: var(--sp-3);
 }
 
+/* The button is the action, so it belongs on the right with the note
+   filling the space beside it, not the DOM order (button, then note)
+   read left to right. order flips that visually without changing
+   the markup or tab order. */
+.form-submit button[type='submit'] {
+  order: 2;
+}
+
 .form-note {
+  order: 1;
   font-size: var(--fs-micro);
   color: var(--mist);
+}
+
+@media (max-width: 640px) {
+  .form-submit {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-2);
+  }
+  .form-submit button[type='submit'] {
+    order: 1;
+  }
+  .form-note {
+    order: 2;
+  }
 }
 
 .form-error {

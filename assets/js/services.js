@@ -1,4 +1,20 @@
 /**
+ * Services page — on phones, a service link from the home page should
+ * jump straight to that service (no room to spare, and scrolling back
+ * up to a hero they already saw on Home is just friction). On
+ * desktop, land on the hero instead, since it's worth seeing and the
+ * sub-nav right below it makes finding the right service a single
+ * click away. Runs after the browser's own jump-to-anchor so it can
+ * override it back to the top on wider screens.
+ */
+(function () {
+  if (window.location.hash && window.innerWidth > 640) {
+    window.scrollTo(0, 0);
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+})();
+
+/**
  * Services page — scrollspy for the sticky jump-nav.
  * Highlights the nav link for whichever service section currently
  * occupies the "active" band of the viewport as the user scrolls.
