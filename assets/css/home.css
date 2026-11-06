@@ -135,14 +135,40 @@
   }
 }
 
-/* ---------- Approach: disconnected data -> Moonlytix -> clear decisions ---------- */
+/* ---------- Approach: disconnected data -> Moonlytix -> clear decisions ----------
+   The circle illustrations and the title/description text below them used to
+   live in one flex column per step, so the connecting arrow (vertically
+   centered on that whole column) ended up centered against circle+text
+   combined instead of against the circle alone. Splitting the grid into two
+   named rows (circles+arrows on row 1, text on row 2, via grid-template-areas)
+   means each arrow's own grid area is exactly row 1's height, so centering it
+   there lines it up with the circles only. .approach-item itself becomes
+   display:contents so its children (.approach-zone / .approach-item__text)
+   can be placed directly into those named areas. */
 .approach-visual {
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr;
-  align-items: start;
-  gap: var(--sp-4);
+  grid-template-areas:
+    "z1 a1 z2 a2 z3"
+    "t1 .  t2 .  t3";
+  column-gap: var(--sp-4);
+  row-gap: var(--sp-7);
   margin-top: var(--sp-8);
 }
+
+.approach-item {
+  display: contents;
+}
+
+.approach-item--1 .approach-zone { grid-area: z1; }
+.approach-item--1 .approach-item__text { grid-area: t1; }
+.approach-item--2 .approach-zone { grid-area: z2; }
+.approach-item--2 .approach-item__text { grid-area: t2; }
+.approach-item--3 .approach-zone { grid-area: z3; }
+.approach-item--3 .approach-item__text { grid-area: t3; }
+
+.approach-arrow--1 { grid-area: a1; }
+.approach-arrow--2 { grid-area: a2; }
 
 .approach-zone {
   position: relative;
@@ -216,18 +242,11 @@
   height: auto;
 }
 
-.approach-item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .approach-item__title {
   font-family: var(--font-body);
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--ink);
-  margin-top: var(--sp-7);
   margin-bottom: var(--sp-3);
 }
 
@@ -240,6 +259,15 @@
 @media (max-width: 960px) {
   .approach-visual {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "z1"
+      "t1"
+      "a1"
+      "z2"
+      "t2"
+      "a2"
+      "z3"
+      "t3";
   }
   .approach-arrow {
     width: 100%;
@@ -288,7 +316,6 @@
   }
 
   .approach-item__title {
-    margin-top: var(--sp-4);
     font-size: 1rem;
   }
 
@@ -316,12 +343,26 @@
 .service-card {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-4);
+  gap: var(--sp-3);
+  padding: var(--sp-4);
+}
+
+/* Disable the shared .card hover accent line specifically for these —
+   kept on every other card type, just not here. */
+.service-card::before {
+  display: none;
+}
+
+.service-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
 }
 
 .service-card__icon {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,12 +372,12 @@
 }
 
 .service-card__icon svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 .service-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--font-body);
   font-weight: 700;
   color: var(--ink);

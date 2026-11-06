@@ -225,13 +225,9 @@ h4 {
   font-size: var(--fs-micro);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ember-red);
+  color: var(--ember-orange);
   font-weight: 600;
   margin-bottom: var(--sp-3);
-}
-
-.section--dark .eyebrow {
-  color: var(--ember-orange);
 }
 
 .lead {

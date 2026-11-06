@@ -23,8 +23,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/main.css?v=18" />
-<link rel="stylesheet" href="assets/css/home.css?v=37" />
+<link rel="stylesheet" href="assets/css/main.css?v=19" />
+<link rel="stylesheet" href="assets/css/home.css?v=38" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -60,7 +60,7 @@
       <div class="hero-content">
         <p class="eyebrow">Supply Chain &amp; Operations Analytics</p>
         <h1 data-reveal>Clear data. Confident decisions. Insights your team can <span class="ember-text">trust.</span></h1>
-        <p class="lead" data-reveal>Moonlytix helps companies improve supply chain visibility, forecasting, and decision-making.</p>
+        <p class="lead" data-reveal>Moonlytix helps growing businesses take their operations to the next level, with data they can actually trust.</p>
         <div class="hero-actions" data-reveal>
           <a href="contact.html" class="btn btn-primary">
             Book an assessment
@@ -89,11 +89,11 @@
   <section class="section approach" id="approach">
     <div class="container">
       <p class="eyebrow">The Moonlytix Approach</p>
-      <h2 style="max-width:30ch">From complex data to clear, confident decisions.</h2>
-      <p class="lead" style="margin-top:0.75rem">Moonlytix connects operational data and analytics to help teams see what&rsquo;s happening, understand why, and decide what to do next.</p>
+      <h2 style="max-width:none">From complex data to clear, confident decisions that move your business forward.</h2>
+      <p class="lead" style="margin-top:0.75rem;max-width:none">Moonlytix connects operational data and analytics to help teams see what&rsquo;s happening, understand why, and decide what to do next, so every report leads somewhere instead of sitting in an inbox.</p>
 
       <div class="approach-visual" data-reveal>
-        <div class="approach-item">
+        <div class="approach-item approach-item--1">
         <div class="approach-zone approach-zone--left">
           <span class="approach-zone__label">Before</span>
           <svg class="approach-scene" viewBox="0 0 400 400" fill="none" aria-hidden="true">
@@ -150,15 +150,17 @@
             </g>
           </svg>
         </div>
+        <div class="approach-item__text">
         <h3 class="approach-item__title">Data scattered everywhere</h3>
         <p class="approach-item__desc">Your business generates plenty of data, but it lives in disconnected systems and spreadsheets with no single, organized view.</p>
         </div>
+        </div>
 
-        <div class="approach-arrow" aria-hidden="true">
+        <div class="approach-arrow approach-arrow--1" aria-hidden="true">
           <svg viewBox="0 0 60 24" fill="none"><path class="flow-line" d="M2 12h48" stroke="url(#g1)" stroke-width="2" stroke-dasharray="3 7"/><path d="M42 5l9 7-9 7" stroke="url(#g1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff3131"/><stop offset="1" stop-color="#ff914d"/></linearGradient></defs></svg>
         </div>
 
-        <div class="approach-item">
+        <div class="approach-item approach-item--2">
         <div class="approach-zone approach-zone--center">
           <span class="approach-zone__label approach-zone__label--accent">Moonlytix</span>
           <svg class="approach-hub" viewBox="0 0 400 400" fill="none" aria-hidden="true">
@@ -210,15 +212,17 @@
             </defs>
           </svg>
         </div>
+        <div class="approach-item__text">
         <h3 class="approach-item__title">Moonlytix brings it together</h3>
         <p class="approach-item__desc">We connect your systems, data, and reporting into one reliable analytics foundation your team can count on.</p>
         </div>
+        </div>
 
-        <div class="approach-arrow" aria-hidden="true">
+        <div class="approach-arrow approach-arrow--2" aria-hidden="true">
           <svg viewBox="0 0 60 24" fill="none"><path class="flow-line" d="M2 12h48" stroke="url(#g2)" stroke-width="2" stroke-dasharray="3 7"/><path d="M42 5l9 7-9 7" stroke="url(#g2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff3131"/><stop offset="1" stop-color="#ff914d"/></linearGradient></defs></svg>
         </div>
 
-        <div class="approach-item">
+        <div class="approach-item approach-item--3">
         <div class="approach-zone approach-zone--right">
           <span class="approach-zone__label">After</span>
           <svg class="approach-scene" viewBox="0 0 400 400" fill="none" aria-hidden="true">
@@ -252,70 +256,84 @@
             </defs>
           </svg>
         </div>
+        <div class="approach-item__text">
         <h3 class="approach-item__title">Clarity across your operations</h3>
         <p class="approach-item__desc">See everything in one place, from inventory and forecasts to suppliers and costs, along with the analytics you need to decide what&rsquo;s next.</p>
+        </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section section--dark" style="padding-top:0">
+  <section class="section section--dark">
     <div class="container">
       <p class="eyebrow">What we do</p>
       <h2 style="max-width:36ch">How we bring structure to your operations.</h2>
 
-      <div class="services-grid" data-reveal-group>
-        <a href="services.html#data-integration" class="card service-card" data-reveal>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5" stroke-linejoin="round"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" stroke-linejoin="round"/></svg>
+      <div class="services-grid">
+        <a href="services.html#data-integration" class="card service-card">
+          <div class="service-card__header">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5" stroke-linejoin="round"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Data Integration &amp; Warehousing</h3>
           </div>
-          <h3>Data Integration &amp; Warehousing</h3>
           <p>We design and build reliable data pipelines and integrations, including ERP systems like JD Edwards and SAP S/4HANA, WMS, TMS, and spreadsheets, into a data lake or warehouse for reporting, analytics, and decision-making.</p>
           <span class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
 
-        <a href="services.html#visualization" class="card service-card" data-reveal>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10M9 20V4M14 20v-8M19 20V7" stroke-linecap="round"/><path d="M3 20h18" stroke-linecap="round"/></svg>
+        <a href="services.html#visualization" class="card service-card">
+          <div class="service-card__header">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10M9 20V4M14 20v-8M19 20V7" stroke-linecap="round"/><path d="M3 20h18" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Supply Chain Dashboards</h3>
           </div>
-          <h3>Supply Chain Dashboards</h3>
           <p>We create executive and operational dashboards in Tableau and Power BI that give teams clear visibility into inventory, forecasting, suppliers, transportation, productivity, and supply chain performance.</p>
           <span class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
 
-        <a href="services.html#network-optimization" class="card service-card" data-reveal>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 7.2L10.2 10.6M17 7.2L13.8 10.6M7 16.8L10.2 13.4M17 16.8L13.8 13.4" stroke-linecap="round"/></svg>
+        <a href="services.html#network-optimization" class="card service-card">
+          <div class="service-card__header">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 7.2L10.2 10.6M17 7.2L13.8 10.6M7 16.8L10.2 13.4M17 16.8L13.8 13.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Network &amp; Footprint Strategy</h3>
           </div>
-          <h3>Network &amp; Footprint Strategy</h3>
           <p>We analyze supply chain networks to identify opportunities to improve facility flows, transportation routes, service levels, cost efficiency, and operational performance.</p>
           <span class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
 
-        <a href="services.html#rpa" class="card service-card" data-reveal>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V4M9.5 4h5" stroke-linecap="round"/><circle cx="9.5" cy="13.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13.5" r="1.1" fill="currentColor" stroke="none"/><path d="M9 17h6" stroke-linecap="round"/></svg>
+        <a href="services.html#rpa" class="card service-card">
+          <div class="service-card__header">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V4M9.5 4h5" stroke-linecap="round"/><circle cx="9.5" cy="13.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13.5" r="1.1" fill="currentColor" stroke="none"/><path d="M9 17h6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Automation &amp; AI Agents</h3>
           </div>
-          <h3>Automation &amp; AI Agents</h3>
           <p>We automate repetitive operational and reporting tasks, and build custom AI agents for workflows that need more judgment, so teams focus on higher-value decisions instead of busywork.</p>
           <span class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
 
-        <a href="services.html#ml-forecasting" class="card service-card" data-reveal>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="3" cy="17" r="1.3" fill="currentColor" stroke="none"/><circle cx="8" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="16" r="1.3" fill="currentColor" stroke="none"/><circle cx="20" cy="7" r="1.3" fill="currentColor" stroke="none"/></svg>
+        <a href="services.html#ml-forecasting" class="card service-card">
+          <div class="service-card__header">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="3" cy="17" r="1.3" fill="currentColor" stroke="none"/><circle cx="8" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="16" r="1.3" fill="currentColor" stroke="none"/><circle cx="20" cy="7" r="1.3" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>Demand Forecasting &amp; AI</h3>
           </div>
-          <h3>Demand Forecasting &amp; AI</h3>
           <p>We build forecasting models that use historical and operational data to improve demand planning, optimize inventory, reduce stockout risk, and support proactive supply chain management.</p>
           <span class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
 
-        <a href="services.html#last-mile" class="card service-card" data-reveal>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16V8a1 1 0 0 1 1-1h9v9H4a1 1 0 0 1-1-1Z" stroke-linejoin="round"/><path d="M13 10h4l3 3v3h-7v-6Z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+        <a href="services.html#last-mile" class="card service-card">
+          <div class="service-card__header">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16V8a1 1 0 0 1 1-1h9v9H4a1 1 0 0 1-1-1Z" stroke-linejoin="round"/><path d="M13 10h4l3 3v3h-7v-6Z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+            </div>
+            <h3>Last-Mile &amp; Carrier Intelligence</h3>
           </div>
-          <h3>Last-Mile &amp; Carrier Intelligence</h3>
           <p>We use AI and analytics to improve last-mile delivery visibility, analyze carrier performance, evaluate transportation costs, compare providers, and support end-to-end supply chain carrier contract negotiations.</p>
           <span class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
