@@ -32,7 +32,7 @@
 .services-hero__visual svg {
   width: 100%;
   height: auto;
-  max-width: 380px;
+  max-width: 300px;
   margin-inline: auto;
   display: block;
 }
@@ -218,7 +218,7 @@
     border-radius: var(--radius-sm);
     background: var(--ember-gradient-soft);
     color: var(--ember-red);
-    margin-bottom: var(--sp-4);
+    margin-bottom: var(--sp-2);
   }
 
   .service-detail__icon svg {

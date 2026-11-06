@@ -5,6 +5,14 @@
 .projects-hero {
   padding-top: calc(var(--nav-h) + var(--sp-6));
   padding-bottom: var(--sp-7);
+  overflow: hidden;
+}
+
+.projects-hero__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--sp-7);
+  align-items: center;
 }
 
 .projects-hero h1 {
@@ -15,6 +23,27 @@
 
 .projects-hero .lead {
   max-width: 60ch;
+}
+
+.projects-hero__visual {
+  pointer-events: none;
+}
+
+.projects-hero__visual svg {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-inline: auto;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .projects-hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-hero__visual {
+    display: none;
+  }
 }
 
 .scenario-list {

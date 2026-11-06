@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/main.css?v=20" />
-<link rel="stylesheet" href="assets/css/projects.css?v=9" />
+<link rel="stylesheet" href="assets/css/projects.css?v=10" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -55,10 +55,60 @@
 <main id="main">
 
   <section class="projects-hero section--dark">
-    <div class="container">
-      <p class="eyebrow">Case studies</p>
-      <h1 data-reveal>See how we turn operations data into decisions</h1>
-      <p class="lead" data-reveal>Worked examples of the data pipelines, dashboards, and analysis we build. Each one is a demonstration project built on sample data, so you can see how we work before we work together.</p>
+    <div class="container projects-hero__grid">
+      <div class="projects-hero__content">
+        <p class="eyebrow">Case studies</p>
+        <h1 data-reveal>See how we turn operations data into decisions</h1>
+        <p class="lead" data-reveal>Worked examples of the data pipelines, dashboards, and analysis we build. Each one is a demonstration project built on sample data, so you can see how we work before we work together.</p>
+      </div>
+      <div class="projects-hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 420 420" fill="none">
+          <circle cx="210" cy="210" r="210" fill="url(#caseGlow)"/>
+
+          <path d="M70 140L205 120L205 290L70 310Z" fill="#10123a" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <path d="M205 120L340 140L340 310L205 290Z" fill="#10123a" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <line x1="205" y1="120" x2="205" y2="290" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+
+          <path d="M90 162h95" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M88 188h98" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M86 214h100" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M84 240h78" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+
+          <path d="M225 162h95" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M223 188h98" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M221 214h92" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M219 240h70" stroke="rgba(255,255,255,0.22)" stroke-width="2.2" stroke-linecap="round"/>
+
+          <path d="M270 120L292 120L292 185L281 173L270 185Z" fill="url(#caseRibbon)"/>
+
+          <path d="M305 290L345 310" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2 8" class="flow-line"/>
+          <rect x="330" y="305" width="78" height="62" rx="10" fill="#10123a" stroke="rgba(255,255,255,0.25)"/>
+          <path d="M338 357h50" stroke="rgba(255,255,255,0.25)" stroke-width="1.3" stroke-linecap="round"/>
+          <rect x="342" y="339" width="10" height="16" rx="2" fill="#ff914d"/>
+          <rect x="362" y="327" width="10" height="28" rx="2" fill="#ff3131"/>
+          <rect x="382" y="333" width="10" height="22" rx="2" fill="#ff914d"/>
+
+          <circle class="pulse-ring" cx="300" cy="150" r="22" stroke="#ff914d" stroke-width="1.4"/>
+          <circle cx="300" cy="150" r="38" fill="#10123a" stroke="url(#caseGrad)" stroke-width="3.2"/>
+          <path d="M283 150l11 11 20-20" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="327" y1="177" x2="355" y2="205" stroke="url(#caseGrad)" stroke-width="7" stroke-linecap="round"/>
+
+          <defs>
+            <radialGradient id="caseGlow" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#ff3131" stop-opacity="0.18"/>
+              <stop offset="1" stop-color="#ff3131" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="caseGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff3131"/>
+              <stop offset="1" stop-color="#ff914d"/>
+            </linearGradient>
+            <linearGradient id="caseRibbon" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ff3131"/>
+              <stop offset="1" stop-color="#ff914d"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
     </div>
   </section>
 
