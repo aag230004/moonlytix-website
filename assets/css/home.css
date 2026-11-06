@@ -433,8 +433,15 @@
 }
 
 /* ---------- Approach anchor target ---------- */
+/* #approach's own padding-top is --section-pad (72-128px, responsive),
+   which is much bigger than the sp-6 gap the hero uses. Subtracting
+   --section-pad back out here means the anchor jump always lands with
+   that same sp-6 of breathing room below the header, regardless of how
+   big --section-pad happens to be at the current viewport width —
+   instead of stacking a separate buffer on top of the section's own
+   padding and landing with a much bigger gap than anywhere else. */
 #approach {
-  scroll-margin-top: calc(var(--nav-h) + var(--sp-4));
+  scroll-margin-top: calc(var(--nav-h) + var(--sp-6) - var(--section-pad));
 }
 
 /* ---------- CTA: light variant, so the page ends light->dark->light
