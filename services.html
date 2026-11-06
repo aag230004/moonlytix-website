@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/main.css?v=20" />
-<link rel="stylesheet" href="assets/css/services.css?v=10" />
+<link rel="stylesheet" href="assets/css/services.css?v=11" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -55,10 +55,84 @@
 <main id="main">
 
   <section class="services-hero section--dark">
-    <div class="container">
-      <p class="eyebrow">What we do</p>
-      <h1 data-reveal>Solutions built around how your business operates.</h1>
-      <p class="lead" data-reveal>From your data foundation to the decisions that drive your supply chain, our services are designed to solve real operational challenges and deliver measurable impact.</p>
+    <div class="container services-hero__grid">
+      <div class="services-hero__content">
+        <p class="eyebrow">What we do</p>
+        <h1 data-reveal>Solutions built around how your business operates.</h1>
+        <p class="lead" data-reveal>From your data foundation to the decisions that drive your supply chain, our services are designed to solve real operational challenges and deliver measurable impact.</p>
+      </div>
+      <div class="services-hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 420 420" fill="none">
+          <circle cx="210" cy="210" r="210" fill="url(#svcHubGlow)"/>
+          <circle cx="210" cy="210" r="150" stroke="rgba(255,145,77,0.14)" stroke-width="1" stroke-dasharray="1 7"/>
+
+          <path d="M210 210L210 62" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2 8" class="flow-line"/>
+          <path d="M210 210L340 137" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2 8" class="flow-line"/>
+          <path d="M210 210L340 283" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2 8" class="flow-line"/>
+          <path d="M210 210L210 358" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2 8" class="flow-line"/>
+          <path d="M210 210L80 283" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2 8" class="flow-line"/>
+          <path d="M210 210L80 137" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2 8" class="flow-line"/>
+
+          <circle class="pulse-ring" cx="210" cy="210" r="42" stroke="#ff914d" stroke-width="1.4"/>
+          <circle class="pulse-ring pulse-ring--delay" cx="210" cy="210" r="42" stroke="#ff3131" stroke-width="1"/>
+          <circle cx="210" cy="210" r="48" fill="#10123a" stroke="url(#svcHubStroke)" stroke-width="2.2"/>
+          <g transform="translate(10,10)">
+            <path d="M184 200a16 16 0 1 0 16-16 12.5 12.5 0 0 1-12.5 12.5" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <circle cx="210" cy="62" r="32" fill="#10123a" stroke="rgba(255,255,255,0.25)"/>
+          <g transform="translate(210,62) scale(1.3) translate(-12,-12)" fill="none" stroke="#ff914d" stroke-width="1.6">
+            <ellipse cx="12" cy="5" rx="8" ry="3"/>
+            <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5" stroke-linejoin="round"/>
+            <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" stroke-linejoin="round"/>
+          </g>
+
+          <circle cx="340" cy="137" r="32" fill="#10123a" stroke="rgba(255,255,255,0.25)"/>
+          <g transform="translate(340,137) scale(1.3) translate(-12,-12)" fill="none" stroke="#fff" stroke-width="1.6">
+            <path d="M4 20V10M9 20V4M14 20v-8M19 20V7" stroke-linecap="round"/>
+            <path d="M3 20h18" stroke-linecap="round"/>
+          </g>
+
+          <circle cx="340" cy="283" r="32" fill="#10123a" stroke="rgba(255,255,255,0.25)"/>
+          <g transform="translate(340,283) scale(1.3) translate(-12,-12)" fill="none" stroke="#ff914d" stroke-width="1.6">
+            <circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/>
+            <path d="M7 7.2L10.2 10.6M17 7.2L13.8 10.6M7 16.8L10.2 13.4M17 16.8L13.8 13.4" stroke-linecap="round"/>
+          </g>
+
+          <circle cx="210" cy="358" r="32" fill="#10123a" stroke="rgba(255,255,255,0.25)"/>
+          <g transform="translate(210,358) scale(1.3) translate(-12,-12)" fill="none" stroke="#fff" stroke-width="1.6">
+            <rect x="5" y="8" width="14" height="11" rx="3"/>
+            <path d="M12 8V4M9.5 4h5" stroke-linecap="round"/>
+            <circle cx="9.5" cy="13.5" r="1.1" fill="#fff" stroke="none"/>
+            <circle cx="14.5" cy="13.5" r="1.1" fill="#fff" stroke="none"/>
+            <path d="M9 17h6" stroke-linecap="round"/>
+          </g>
+
+          <circle cx="80" cy="283" r="32" fill="#10123a" stroke="rgba(255,255,255,0.25)"/>
+          <g transform="translate(80,283) scale(1.3) translate(-12,-12)" fill="none" stroke="#ff914d" stroke-width="1.6">
+            <path d="M3 17l5-5 4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="3" cy="17" r="1.3" fill="#ff914d" stroke="none"/><circle cx="8" cy="12" r="1.3" fill="#ff914d" stroke="none"/><circle cx="12" cy="16" r="1.3" fill="#ff914d" stroke="none"/><circle cx="20" cy="7" r="1.3" fill="#ff914d" stroke="none"/>
+          </g>
+
+          <circle cx="80" cy="137" r="32" fill="#10123a" stroke="rgba(255,255,255,0.25)"/>
+          <g transform="translate(80,137) scale(1.3) translate(-12,-12)" fill="none" stroke="#fff" stroke-width="1.6">
+            <path d="M3 16V8a1 1 0 0 1 1-1h9v9H4a1 1 0 0 1-1-1Z" stroke-linejoin="round"/>
+            <path d="M13 10h4l3 3v3h-7v-6Z" stroke-linejoin="round"/>
+            <circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/>
+          </g>
+
+          <defs>
+            <radialGradient id="svcHubGlow" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#ff3131" stop-opacity="0.22"/>
+              <stop offset="1" stop-color="#ff3131" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="svcHubStroke" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff3131"/>
+              <stop offset="1" stop-color="#ff914d"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -77,6 +151,9 @@
   <section class="section service-detail" id="data-integration">
     <div class="container service-detail__inner">
       <div class="service-detail__content" data-reveal>
+        <div class="service-detail__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5" stroke-linejoin="round"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" stroke-linejoin="round"/></svg>
+        </div>
         <p class="eyebrow">All your systems working as one</p>
         <h2>Data Integration &amp; Warehousing</h2>
         <p class="lead">We build the data pipelines that connect your ERP, WMS, TMS, and spreadsheets to the data warehouse or data lake that fits your business best. Your data stays clean, organized, and preserved, ready for reporting and analysis whenever you need it.</p>
@@ -91,7 +168,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Data lake &amp; warehouse architecture</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Data quality &amp; validation checks</li>
         </ul>
-        <a href="contact.html" class="btn btn-secondary">Talk to us about data integration</a>
+        <a href="contact.html?interest=data-integration" class="btn btn-secondary">Talk to us about data integration</a>
       </div>
       <div class="service-detail__visual" data-reveal>
         <div class="visual-frame">
@@ -133,6 +210,9 @@
   <section class="section service-detail service-detail--reverse" id="visualization">
     <div class="container service-detail__inner">
       <div class="service-detail__content" data-reveal>
+        <div class="service-detail__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10M9 20V4M14 20v-8M19 20V7" stroke-linecap="round"/><path d="M3 20h18" stroke-linecap="round"/></svg>
+        </div>
         <p class="eyebrow">Your whole operation at a glance</p>
         <h2>Supply Chain Dashboards</h2>
         <p class="lead">We build executive and operational dashboards in Tableau and Power BI that turn your data into clear visuals. Your team sees inventory, forecasts, suppliers, and transportation in one place, and can act on what they see.</p>
@@ -141,7 +221,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>KPI &amp; performance scorecards</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Self-serve reporting for your team</li>
         </ul>
-        <a href="contact.html" class="btn btn-secondary">Talk to us about dashboards</a>
+        <a href="contact.html?interest=dashboards" class="btn btn-secondary">Talk to us about dashboards</a>
       </div>
       <div class="service-detail__visual" data-reveal>
         <div class="visual-frame">
@@ -184,6 +264,9 @@
   <section class="section service-detail" id="network-optimization">
     <div class="container service-detail__inner">
       <div class="service-detail__content" data-reveal>
+        <div class="service-detail__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 7.2L10.2 10.6M17 7.2L13.8 10.6M7 16.8L10.2 13.4M17 16.8L13.8 13.4" stroke-linecap="round"/></svg>
+        </div>
         <p class="eyebrow">The right footprint for your volume</p>
         <h2>Network &amp; Footprint Strategy</h2>
         <p class="lead">We study your supply chain network, including your facilities, routes, and service levels, to find where cost and delays can be reduced. Then we model better options so you can decide where your warehouses and distribution centers should be.</p>
@@ -192,7 +275,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Service level &amp; cost trade-off analysis</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Network redesign scenarios</li>
         </ul>
-        <a href="contact.html" class="btn btn-secondary">Talk to us about network strategy</a>
+        <a href="contact.html?interest=network" class="btn btn-secondary">Talk to us about network strategy</a>
       </div>
       <div class="service-detail__visual" data-reveal>
         <div class="visual-frame">
@@ -225,6 +308,9 @@
   <section class="section service-detail service-detail--reverse" id="rpa">
     <div class="container service-detail__inner">
       <div class="service-detail__content" data-reveal>
+        <div class="service-detail__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V4M9.5 4h5" stroke-linecap="round"/><circle cx="9.5" cy="13.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13.5" r="1.1" fill="currentColor" stroke="none"/><path d="M9 17h6" stroke-linecap="round"/></svg>
+        </div>
         <p class="eyebrow">Let the busywork run itself, or think for itself</p>
         <h2>Automation &amp; AI Agents</h2>
         <p class="lead">We automate the repetitive tasks that eat up your team&rsquo;s week, like manual data entry, report building, and status updates. For workflows that need more judgment, we build AI agents that can look up information, make decisions inside guardrails you set, and take action, so your team spends less time on busywork and more on decisions that matter.</p>
@@ -233,7 +319,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Automated data entry &amp; reporting</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom AI agents for complex workflows</li>
         </ul>
-        <a href="contact.html" class="btn btn-secondary">Talk to us about automation &amp; AI agents</a>
+        <a href="contact.html?interest=automation" class="btn btn-secondary">Talk to us about automation &amp; AI agents</a>
       </div>
       <div class="service-detail__visual" data-reveal>
         <div class="visual-frame">
@@ -280,6 +366,9 @@
   <section class="section service-detail" id="ml-forecasting">
     <div class="container service-detail__inner">
       <div class="service-detail__content" data-reveal>
+        <div class="service-detail__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="3" cy="17" r="1.3" fill="currentColor" stroke="none"/><circle cx="8" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="16" r="1.3" fill="currentColor" stroke="none"/><circle cx="20" cy="7" r="1.3" fill="currentColor" stroke="none"/></svg>
+        </div>
         <p class="eyebrow">Plan for what&rsquo;s next, not what happened</p>
         <h2>Demand Forecasting &amp; AI</h2>
         <p class="lead">We build forecasting models that learn from your historical and operational data to predict demand more accurately. That helps you plan inventory better, reduce stockouts, and manage your supply chain before problems appear.</p>
@@ -288,7 +377,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Seasonality &amp; scenario planning</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Inventory-aware forecasting</li>
         </ul>
-        <a href="contact.html" class="btn btn-secondary">Talk to us about forecasting</a>
+        <a href="contact.html?interest=forecasting" class="btn btn-secondary">Talk to us about forecasting</a>
       </div>
       <div class="service-detail__visual" data-reveal>
         <div class="visual-frame">
@@ -316,6 +405,9 @@
   <section class="section service-detail service-detail--reverse" id="last-mile">
     <div class="container service-detail__inner">
       <div class="service-detail__content" data-reveal>
+        <div class="service-detail__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16V8a1 1 0 0 1 1-1h9v9H4a1 1 0 0 1-1-1Z" stroke-linejoin="round"/><path d="M13 10h4l3 3v3h-7v-6Z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+        </div>
         <p class="eyebrow">Know every carrier and negotiate with facts</p>
         <h2>Last-Mile &amp; Carrier Intelligence</h2>
         <p class="lead">We use AI and analytics to give you clear visibility into last mile delivery performance and to compare your carriers side by side. You go into every contract negotiation with real data on cost and service.</p>
@@ -324,7 +416,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Carrier performance benchmarking</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Contract negotiation analytics</li>
         </ul>
-        <a href="contact.html" class="btn btn-secondary">Talk to us about carrier analytics</a>
+        <a href="contact.html?interest=last-mile" class="btn btn-secondary">Talk to us about carrier analytics</a>
       </div>
       <div class="service-detail__visual" data-reveal>
         <div class="visual-frame">

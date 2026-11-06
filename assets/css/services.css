@@ -5,6 +5,14 @@
 .services-hero {
   padding-top: calc(var(--nav-h) + var(--sp-6));
   padding-bottom: var(--sp-7);
+  overflow: hidden;
+}
+
+.services-hero__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--sp-7);
+  align-items: center;
 }
 
 .services-hero h1 {
@@ -15,6 +23,27 @@
 
 .services-hero .lead {
   max-width: 56ch;
+}
+
+.services-hero__visual {
+  pointer-events: none;
+}
+
+.services-hero__visual svg {
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+  margin-inline: auto;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .services-hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .services-hero__visual {
+    display: none;
+  }
 }
 
 .services-nav {
@@ -161,4 +190,39 @@
 .services-nav a.is-active {
   color: var(--ember-red);
   border-color: var(--ember-red);
+}
+
+/* ---------- Service icon badge: hidden on desktop (the illustration
+   already carries the visual weight there), shown instead of it on
+   phones, where the full illustration added scroll length without
+   adding information. ---------- */
+.service-detail__icon {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .services-nav {
+    display: none;
+  }
+
+  .service-detail__visual {
+    display: none;
+  }
+
+  .service-detail__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--ember-gradient-soft);
+    color: var(--ember-red);
+    margin-bottom: var(--sp-4);
+  }
+
+  .service-detail__icon svg {
+    width: 24px;
+    height: 24px;
+  }
 }

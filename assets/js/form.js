@@ -8,6 +8,15 @@
   const form = document.getElementById('contact-form');
   if (!form) return;
 
+  /* A "Talk to us about X" button on the services page links here with
+     ?interest=<value>, so the matching option is already selected and
+     the visitor has one less thing to do. */
+  const interestSelect = document.getElementById('interest');
+  const requestedInterest = new URLSearchParams(window.location.search).get('interest');
+  if (interestSelect && requestedInterest && interestSelect.querySelector(`option[value="${requestedInterest}"]`)) {
+    interestSelect.value = requestedInterest;
+  }
+
   const card = form.closest('.contact-form-card');
   const successPanel = document.getElementById('form-success');
   const errorPanel = document.getElementById('form-error');
