@@ -323,14 +323,6 @@
     max-width: 160px;
   }
 
-  .approach-item__title {
-    font-size: 1rem;
-  }
-
-  .approach-item__desc {
-    font-size: 0.875rem;
-  }
-
   .approach-arrow {
     height: 28px;
   }
@@ -353,12 +345,6 @@
   flex-direction: column;
   gap: var(--sp-3);
   padding: var(--sp-4);
-}
-
-/* Disable the shared .card hover accent line specifically for these —
-   kept on every other card type, just not here. */
-.service-card::before {
-  display: none;
 }
 
 .service-card__header {

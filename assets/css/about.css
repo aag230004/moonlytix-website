@@ -21,7 +21,7 @@
 }
 
 .about-hero .lead {
-  max-width: 72ch;
+  max-width: none;
   font-size: var(--fs-lead);
 }
 
@@ -61,28 +61,31 @@
 }
 
 .pillar-card {
-  padding: var(--sp-5);
+  padding: var(--sp-4);
 }
 
-.pillar-card::before {
-  display: none;
+.pillar-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-2);
 }
 
 .pillar-card__icon {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
   background: var(--ember-gradient-soft);
   color: var(--ember-red);
-  margin-bottom: var(--sp-4);
 }
 
 .pillar-card__icon svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 .pillar-card h3 {
@@ -90,7 +93,6 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--ink);
-  margin-bottom: var(--sp-2);
 }
 
 .pillar-card p {
