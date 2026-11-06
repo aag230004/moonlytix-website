@@ -72,13 +72,18 @@
 }
 
 .hero-visual {
-  /* No `height: 100%` here on purpose — with align-items:center on the
-     grid, that would stretch this column to match whatever height the
-     text column happens to need (e.g. if the headline wraps an extra
-     line), dragging the video along with it. min-height plus centering
-     lets this column size itself and just center in the row. */
+  /* height:100% (capped by max-height) makes this column match the text
+     column's actual height instead of forcing a flat 560px regardless of
+     how tall the text happens to be — a fixed min-height left a growing
+     dead zone (above or below the text, depending on alignment) whenever
+     the text column came in shorter than 560px, which is most of the
+     time. max-height keeps it from growing past its intended size if the
+     headline ever wraps extra lines; min-height keeps it from going too
+     small if the text is unusually short. */
   position: relative;
-  min-height: 560px;
+  height: 100%;
+  max-height: 560px;
+  min-height: 320px;
   /* Purely decorative (aria-hidden), and the scaled-up video's own box
      extends well past its visible/masked edges — without this, that
      invisible-but-still-there box can sit on top of the buttons next to
