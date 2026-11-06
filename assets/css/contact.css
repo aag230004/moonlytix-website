@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .contact-hero {
-  padding-top: calc(var(--nav-h) + var(--sp-8));
+  padding-top: calc(var(--nav-h) + var(--sp-6));
   padding-bottom: var(--sp-7);
   background: radial-gradient(ellipse 70% 50% at 50% 10%, rgba(255, 66, 61, 0.1), transparent 60%), var(--void);
   text-align: center;
