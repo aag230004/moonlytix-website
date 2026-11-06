@@ -44,7 +44,13 @@
   display: grid;
   grid-template-columns: 1.05fr 1.2fr;
   gap: var(--sp-7);
-  align-items: center;
+  /* align-items:start (not center) so the text column always starts flush
+     with the top of the row. .hero-visual has a fixed min-height (560px)
+     that doesn't shrink as the hero's responsive font-size does at
+     narrower widths, so centering the shorter text block against that
+     fixed-height column opened up a growing gap above the eyebrow the
+     narrower the window got. */
+  align-items: start;
 }
 
 .hero-content h1 {
