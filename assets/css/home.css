@@ -161,7 +161,10 @@
     "t1 .  t2 .  t3";
   column-gap: var(--sp-4);
   row-gap: var(--sp-7);
-  margin-top: var(--sp-8);
+  /* The lead paragraph above and this visual sit in the same light
+     section with no color break, so sp-8 (96px) of plain empty space
+     here read as a gap rather than breathing room. */
+  margin-top: var(--sp-6);
 }
 
 .approach-item {

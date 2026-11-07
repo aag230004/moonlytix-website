@@ -17,7 +17,7 @@
 .about-hero h1 {
   color: var(--white);
   max-width: 34ch;
-  margin-bottom: var(--sp-5);
+  margin-bottom: var(--sp-4);
 }
 
 .about-hero .lead {
@@ -33,7 +33,7 @@
 }
 
 .mv-card {
-  padding: var(--sp-7) var(--sp-6);
+  padding: var(--sp-6) var(--sp-5);
 }
 
 .mv-card .eyebrow {

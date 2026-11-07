@@ -146,7 +146,11 @@
 
 /* ---------- Case study ---------- */
 .case-study {
-  padding-bottom: var(--sp-7);
+  /* This section and .upcoming right after it share the same light
+     background, so their padding stacks into one plain gap rather than
+     two intentional ones — kept smaller here since .upcoming also has
+     its own top padding. */
+  padding-bottom: var(--sp-5);
 }
 
 .case-study__header {
@@ -258,7 +262,7 @@
 
 /* ---------- Coming next ---------- */
 .upcoming {
-  padding-top: var(--sp-6);
+  padding-top: var(--sp-5);
 }
 
 .upcoming__header {

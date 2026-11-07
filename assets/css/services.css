@@ -85,7 +85,11 @@
 
 .service-detail {
   scroll-margin-top: calc(var(--nav-h) + 60px);
-  padding-block: clamp(2.25rem, 4vw, 3.75rem);
+  /* All six detail blocks share the same light background with no
+     divider between them, so this padding is the only thing separating
+     one service from the next — kept modest so six of them in a row
+     don't add up to a wall of empty space. */
+  padding-block: clamp(2rem, 3.25vw, 2.75rem);
 }
 
 .service-detail__inner {
