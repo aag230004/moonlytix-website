@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .services-hero {
-  padding-top: calc(var(--nav-h) + var(--sp-6));
+  padding-top: calc(var(--nav-h) + var(--section-pad));
   padding-bottom: var(--sp-7);
   overflow: hidden;
 }
@@ -85,11 +85,14 @@
 
 .service-detail {
   scroll-margin-top: calc(var(--nav-h) + 60px);
-  /* All six detail blocks share the same light background with no
-     divider between them, so this padding is the only thing separating
-     one service from the next — kept modest so six of them in a row
-     don't add up to a wall of empty space. */
-  padding-block: clamp(2rem, 3.25vw, 2.75rem);
+  /* Top padding matches --section-pad so the gap from this section's
+     own top edge to its eyebrow/icon is identical to every other
+     section on the site, regardless of what precedes it. Bottom stays
+     a bit tighter since these six blocks share one light background
+     with no divider between them — a full --section-pad on both sides
+     of all six would add up to a wall of empty space. */
+  padding-top: var(--section-pad);
+  padding-bottom: clamp(2rem, 3.25vw, 2.75rem);
 }
 
 .service-detail__inner {

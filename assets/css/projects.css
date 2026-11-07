@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .projects-hero {
-  padding-top: calc(var(--nav-h) + var(--sp-6));
+  padding-top: calc(var(--nav-h) + var(--section-pad));
   padding-bottom: var(--sp-7);
   overflow: hidden;
 }
@@ -261,9 +261,9 @@
 }
 
 /* ---------- Coming next ---------- */
-.upcoming {
-  padding-top: var(--sp-5);
-}
+/* No top-padding override here — it inherits .section's default
+   padding-top (--section-pad), same as every other section's gap from
+   its own top edge to its first content element. */
 
 .upcoming__header {
   text-align: center;

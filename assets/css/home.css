@@ -11,7 +11,11 @@
 .hero {
   display: flex;
   align-items: center;
-  padding-top: calc(var(--nav-h) + var(--sp-6));
+  /* Same top-padding formula as every other section (nav height plus
+     --section-pad) so the gap from the nav to the eyebrow is identical
+     whether a section sits first on the page, under the fixed nav, or
+     stacks after another section. */
+  padding-top: calc(var(--nav-h) + var(--section-pad));
   padding-bottom: var(--sp-7);
   position: relative;
   overflow: hidden;
@@ -137,9 +141,6 @@
   .hero-visual video {
     -webkit-mask-image: radial-gradient(circle at center, black 0, black 50px, transparent 170px);
     mask-image: radial-gradient(circle at center, black 0, black 50px, transparent 170px);
-  }
-  .hero {
-    padding-top: calc(var(--nav-h) + var(--sp-5));
   }
 }
 

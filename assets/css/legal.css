@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .legal-hero {
-  padding-top: calc(var(--nav-h) + var(--sp-6));
+  padding-top: calc(var(--nav-h) + var(--section-pad));
   padding-bottom: var(--sp-7);
   text-align: center;
 }
