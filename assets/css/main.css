@@ -170,6 +170,28 @@ h4 {
   color: var(--ink);
 }
 
+/* Every heading gets a token-driven size by default. Without this,
+   any h1/h2/h3 that a page doesn't explicitly re-size falls back to
+   the browser's plain UA default (e.g. h2 at 1.5em of body text,
+   ~25px) instead of the design's intended scale — which is exactly
+   what was happening to most section titles site-wide. A more
+   specific selector (a hero h1, a card's h3) still wins over these. */
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
 :focus-visible {
   outline: 2px solid var(--ember-orange);
   outline-offset: 3px;

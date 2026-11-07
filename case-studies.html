@@ -23,8 +23,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/main.css?v=23" />
-<link rel="stylesheet" href="assets/css/projects.css?v=11" />
+<link rel="stylesheet" href="assets/css/main.css?v=24" />
+<link rel="stylesheet" href="assets/css/projects.css?v=12" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -62,30 +62,49 @@
         <p class="lead" data-reveal>Worked examples of the data pipelines, dashboards, and analysis we build. Each one is a demonstration project built on sample data, so you can see how we work before we work together.</p>
       </div>
       <div class="projects-hero__visual" aria-hidden="true">
-        <svg viewBox="0 0 230 210" fill="none">
-          <circle cx="110" cy="120" r="150" fill="url(#caseGlow)"/>
-
-          <circle cx="100" cy="95" r="70" fill="#10123a" stroke="url(#caseGrad)" stroke-width="2.2"/>
-          <path d="M65 125h70" stroke="rgba(255,255,255,0.25)" stroke-width="1.6" stroke-linecap="round"/>
-          <rect x="75" y="90" width="14" height="35" rx="2" fill="#ff914d"/>
-          <rect x="95" y="75" width="14" height="50" rx="2" fill="#ff3131"/>
-          <rect x="115" y="100" width="14" height="25" rx="2" fill="#ff914d"/>
-
-          <circle class="pulse-ring" cx="165" cy="150" r="20" stroke="#ff914d" stroke-width="1.2"/>
-          <circle cx="165" cy="150" r="28" fill="#10123a" stroke="url(#caseGrad)" stroke-width="2.6"/>
-          <path d="M153 150l7 7 13-13" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <line x1="184" y1="170" x2="203" y2="187" stroke="url(#caseGrad)" stroke-width="6" stroke-linecap="round"/>
-
+        <svg viewBox="0 0 240 220" fill="none">
           <defs>
-            <radialGradient id="caseGlow" cx="0.5" cy="0.5" r="0.5">
-              <stop offset="0" stop-color="#ff3131" stop-opacity="0.18"/>
+            <radialGradient id="caseGlow" cx="0.5" cy="0.45" r="0.6">
+              <stop offset="0" stop-color="#ff3131" stop-opacity="0.16"/>
               <stop offset="1" stop-color="#ff3131" stop-opacity="0"/>
             </radialGradient>
-            <linearGradient id="caseGrad" x1="0" y1="0" x2="1" y2="1">
+            <linearGradient id="caseGrad" x1="0" y1="1" x2="1" y2="0">
               <stop offset="0" stop-color="#ff3131"/>
               <stop offset="1" stop-color="#ff914d"/>
             </linearGradient>
+            <linearGradient id="caseLine" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff914d"/>
+              <stop offset="1" stop-color="#ff3131"/>
+            </linearGradient>
+            <pattern id="caseDots" width="22" height="22" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.08)"/>
+            </pattern>
           </defs>
+
+          <circle cx="120" cy="110" r="150" fill="url(#caseGlow)"/>
+
+          <!-- results panel -->
+          <rect x="20" y="24" width="200" height="164" rx="18" fill="#10123a" stroke="url(#caseGrad)" stroke-width="2"/>
+          <rect x="20" y="24" width="200" height="164" rx="18" fill="url(#caseDots)"/>
+
+          <line x1="40" y1="150" x2="200" y2="150" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <line x1="40" y1="110" x2="200" y2="110" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <line x1="40" y1="70" x2="200" y2="70" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+          <!-- upward performance trend, before vs. after -->
+          <path d="M42 146 85 120 128 128 170 80 198 56 198 150 42 150 Z" fill="url(#caseGlow)" opacity="0.5"/>
+          <polyline points="42,146 85,120 128,128 170,80 198,56" fill="none" stroke="url(#caseLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <circle cx="42" cy="146" r="4" fill="#ff914d"/>
+          <circle cx="85" cy="120" r="4" fill="#ff914d"/>
+          <circle cx="128" cy="128" r="4" fill="#ff914d"/>
+          <circle cx="170" cy="80" r="4" fill="#ff3131"/>
+          <circle class="pulse-ring" cx="198" cy="56" r="10" stroke="#ff3131" stroke-width="1.4"/>
+          <circle cx="198" cy="56" r="6" fill="#ff3131"/>
+
+          <!-- verified-results seal -->
+          <circle cx="198" cy="176" r="26" fill="#10123a" stroke="url(#caseGrad)" stroke-width="2.6"/>
+          <path d="M186 176l8 8 16-16" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
     </div>

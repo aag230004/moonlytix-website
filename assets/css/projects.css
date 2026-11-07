@@ -101,7 +101,7 @@
 
 .scenario-item__body h3 {
   font-family: var(--font-body);
-  font-size: 1.3rem;
+  font-size: var(--fs-h3);
   font-weight: 700;
   color: var(--ink);
   margin-bottom: var(--sp-3);
@@ -183,7 +183,7 @@
 
 .case-study__step h3 {
   font-family: var(--font-body);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--ink);
   margin-bottom: var(--sp-2);
@@ -284,7 +284,7 @@
 
 .upcoming-card h3 {
   font-family: var(--font-body);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--ink);
 }
