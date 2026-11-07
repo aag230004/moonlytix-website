@@ -119,7 +119,7 @@
 }
 
 .mission p {
-  max-width: 75ch;
+  max-width: none;
   color: var(--ink-soft);
   font-size: var(--fs-lead);
   line-height: 1.65;
